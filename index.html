@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝可梦图鉴 - 探索神奇宝贝世界</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/pokeball.png">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/images/pokeball.png" alt="宝可梦球" class="logo-icon">
+                <span>宝可梦图鉴</span>
+            </a>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#pokedex" class="nav-link">宝可梦图鉴</a></li>
+                <li><a href="#types" class="nav-link">属性介绍</a></li>
+                <li><a href="#regions" class="nav-link">地区探索</a></li>
+                <li><a href="#games" class="nav-link">游戏系列</a></li>
+            </ul>
+            
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">欢迎来到<span class="highlight">宝可梦</span>世界</h1>
+                <p class="hero-subtitle">探索、捕捉、训练和战斗！与数百种神奇宝贝成为朋友，开启你的冒险之旅。</p>
+                <div class="hero-buttons">
+                    <a href="#pokedex" class="btn btn-primary">探索图鉴</a>
+                    <a href="#games" class="btn btn-secondary">游戏介绍</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/pikachu.png" alt="皮卡丘" class="pikachu-img">
+                <div class="pokeball-floating">
+                    <img src="assets/images/pokeball.png" alt="精灵球">
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 宝可梦图鉴区域 -->
+    <section class="section pokedex-section" id="pokedex">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">宝可梦<span class="highlight">图鉴</span></h2>
+                <p class="section-subtitle">认识这些受欢迎的神奇宝贝伙伴</p>
+            </div>
+            
+            <div class="pokedex-grid">
+                <!-- 宝可梦卡片将通过JavaScript动态生成 -->
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-outline" id="loadMore">加载更多宝可梦</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 属性介绍 -->
+    <section class="section types-section" id="types">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">宝可梦<span class="highlight">属性</span></h2>
+                <p class="section-subtitle">了解属性相克关系，成为对战大师</p>
+            </div>
+            
+            <div class="types-grid">
+                <div class="type-card grass">
+                    <div class="type-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>草属性</h3>
+                    <p>克制：水、地面、岩石</p>
+                    <p>被克：火、冰、毒、飞行、虫</p>
+                </div>
+                
+                <div class="type-card fire">
+                    <div class="type-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>火属性</h3>
+                    <p>克制：草、冰、虫、钢</p>
+                    <p>被克：水、地面、岩石</p>
+                </div>
+                
+                <div class="type-card water">
+                    <div class="type-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>水属性</h3>
+                    <p>克制：火、地面、岩石</p>
+                    <p>被克：电、草</p>
+                </div>
+                
+                <div class="type-card electric">
+                    <div class="type-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>电属性</h3>
+                    <p>克制：水、飞行</p>
+                    <p>被克：地面</p>
+                </div
